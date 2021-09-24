@@ -1,4 +1,4 @@
-# PAPA React JS Resume Starter Pack and Digital Portfolio
+# MAYANK React JS Resume Starter Pack and Digital Portfolio
 
 ![MAYANK React JS Portfolio Starter Pack](resume-screenshot.png?raw=true "MAYANK React JS Portfolio Stater Pack ")
 
