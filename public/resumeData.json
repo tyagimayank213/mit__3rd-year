@@ -1,45 +1,40 @@
 {
   "main": {
-    "name": "Sonny Sangha",
-    "occupation": "CEO of PAPA",
-    "description": "I eat, sleep and breathe React",
+    "name": "Mayank Tyagi",
+    "occupation": "Student at Meerut Institute of Technology",
+    "description": ".",
     "image": "profilepic.jpg",
-    "bio": "Hi there! I am Sonny! You might also know me as PAPA React. I've been coding for over 10 years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
-    "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
-    "email": "papareact.team@gmail.com",
-    "phone": "+44 1234567899",
+    "bio": "Extremely motivated to constantly develop my skills and grow professionally. My curiosity more than my knowledge is what pushes me to excel in my work.",
+    "contactmessage": "Get in touch with me",
+    "email": "tyagimayank213@gmail.com",
+    "phone": "+91 9548083214",
     "address": {
-      "street": "123 Dev Lane",
-      "city": "London",
-      "state": "Devosphere",
-      "zip": "W3B D3V"
+      "street": "B-26/1, Nand Vihar, Rohta Road",
+      "city": "Meerut",
+      "state": "Uttarpradesh",
+      "zip": "250001"
     },
     "website": "https://www.papareact.com/course",
     "resumedownload": "http://papareact.com",
     "social": [
       {
-        "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
-        "className": "fa fa-youtube"
-      },
-      {
         "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
+        "url": "https://www.facebook.com/mayank.tyagi.90260403",
         "className": "fa fa-facebook"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
+        "url": "https://www.linkedin.com/in/mayank-tyagi-372142213/",
         "className": "fa fa-linkedin"
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
+        "url": "https://www.instagram.com/tyagimayank213/",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "https://github.com/PapaReact",
+        "url": "https://github.com/tyagimayank213",
         "className": "fa fa-github"
       }
     ]
@@ -48,75 +43,110 @@
     "skillmessage": "My Programming Language Proficiency",
     "education": [
       {
-        "school": "University of Kent - UK",
-        "degree": "Bachelor's Degree, Computer Science",
-        "graduated": "July 2016",
-        "description": "Graduated with First Class Honours"
-      }
-    ],
-    "work": [
+        "school": "Dr APJ Abdul Kalam Technical University, Lucknow",
+        "degree": "Bachelor of Technology, Computer Science and Engineering.",
+        "graduated": "May 2023",
+        "description":"."
+      },
       {
-        "company": "PAPA",
-        "title": "Founder and CEO",
-        "years": "May 2019 - Present",
-        "description": "Cloning all the apps possible. On the way to clone the world! Building the PAPA Fam as large as possible."
+        "school": "Skyward Senior Secondary School, Roorkee",
+        "degree": "Intermediate (12th).",
+        "graduated": "Apr 2018 - Mar 2019",
+        "description":"."
       }
     ],
     "skills": [
       {
-        "name": "ReactJs",
+        "name": "C++",
         "level": "100%"
       },
+      
       {
-        "name": "Python",
+        "name": "DATASTRUCTURES & ALGORITHMS",
         "level": "85%"
       },
       {
-        "name": "Git",
+        "name": "REACTjS",
+        "level": "85%"
+      },
+      {
+        "name": "NODEjS",
         "level": "70%"
       },
       {
-        "name": "JavaScript",
-        "level": "99%"
+        "name": "JAVASCRIPT",
+        "level": "70%"
       },
       {
+        "name": "MONGODB",
+        "level": "70%"
+      },
+      {
+        "name": "Git",
+        "level": "80%"
+      },
+      
+      {
         "name": "Web Development",
-        "level": "95%"
+        "level": "90%"
+      },
+      {
+        "name": "JAVA",
+        "level": "50%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Snapchat Clone (React JS)",
+        "title": "Amazon Clone (ReactJS Redux)",
         "category": "",
-        "image": "snapchat.jpg",
-        "url": "https://youtu.be/1kGISk5ft2w"
+        "image": "amazon.png",
+        "url": "https://amazon-clone-fully-responsive.vercel.app/"
       },
       {
-        "title": "Gmail Clone (React JS)",
+        "title": "Netflix Clone (ReactJS Redux)",
         "category": "",
-        "image": "gmail.jpg",
-        "url": "https://youtu.be/b7nrXjS6Dqs"
+        "image": "netflix.png",
+        "url": "https://netflix-clone-5bd42.firebaseapp.com/"
       },
       {
-        "title": "LinkedIn Clone (React JS)",
+        "title": "Canvas Website (Javascript)",
         "category": "",
-        "image": "linkedin.jpg",
-        "url": "https://youtu.be/QaYts9sPmcY"
-      }
-    ]
-  },
-  "testimonials": {
-    "testimonials": [
-      {
-        "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
-        "user": "Jorge Fouto"
+        "image": "canvas.png",
+        "url": "https://canvas-mt.herokuapp.com/"
       },
       {
-        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
-        "user": "Adam Curtis"
+        "title": "Analog clock (Javascript)",
+        "category": "",
+        "image": "analog.png",
+        "url": "https://mt-analog-create.herokuapp.com/"
+      },
+      {
+        "title": "Drum-Kit (Javascript)",
+        "category": "",
+        "image": "drum-kit.png",
+        "url": "https://mt-drum-kit.herokuapp.com/"
+      },
+      {
+        "title": "Flex Gallery (Javascript)",
+        "category": "",
+        "image": "flex-gallery.png",
+        "url": "https://mt-flex-gallery.herokuapp.com/"
+      },
+      {
+        "title": "Weather (Javascript)",
+        "category": "",
+        "image": "weather.png",
+        "url": "https://weather-application-20.herokuapp.com/"
+      },
+      {
+        "title": "ToDo Website (React JS)",
+        "category": "",
+        "image": "todo.png",
+        "url": "https://todo-app-mt-8f91b.firebaseapp.com/"
       }
     ]
   }
+    
 }
