@@ -1,6 +1,6 @@
 # PAPA React JS Resume Starter Pack and Digital Portfolio
 
-![PAPA React JS Portfolio Starter Pack](resume-screenshot.png?raw=true "PAPA React JS Portfolio Stater Pack ")
+![MAYANK React JS Portfolio Starter Pack](resume-screenshot.png?raw=true "MAYANK React JS Portfolio Stater Pack ")
 
 ### <a href="https://resume-alpha-ashen.vercel.app/">LIVE DEMO</a>
 
