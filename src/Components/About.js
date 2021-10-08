@@ -7,7 +7,6 @@ const About = ({ data }) => {
     var bio = data.bio;
     var secA = data.secA;
     var secB = data.SecB;
-    var resumeDownload = data.resumedownload;
   }
 
   return (
