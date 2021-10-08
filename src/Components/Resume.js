@@ -3,25 +3,22 @@ import React from "react";
 const Resume = ({ data }) => {
   if (data) {
     var skillmessage = data.skillmessage;
-    var education = data.education.map(function (education) {
+    var syllabuss = data.syllabus.map(function (subject) {
       return (
-        <div key={education.school}>
-          <h3>{education.school}</h3>
-          <p className="info">
-            {education.degree} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
-          </p>
-          <p>{education.description}</p>
+        <div key={subject.subjects} >
+          <a href={subject.link}>
+          <h4>{subject.subjects}</h4></a>
+          <hr></hr>
         </div>
       );
     });
     var skills = data.skills.map(function (skills) {
-      var className = "bar-expand " + skills.name.toLowerCase();
       return (
-        <li key={skills.name}>
-          <span style={{ width: skills.level }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
+        <div key={skills.subjects} >
+          <a href={skills.link}>
+          <h4>{skills.subjects}</h4></a>
+          <hr></hr>
+        </div>
       );
     });
   }
@@ -31,31 +28,29 @@ const Resume = ({ data }) => {
       <div className="row education">
         <div className="three columns header-col">
           <h1>
-            <span>Education</span>
+            <span>Syllabus</span>
           </h1>
         </div>
 
         <div className="nine columns main-col">
           <div className="row item">
-            <div className="twelve columns">{education}</div>
+            <div className="twelve columns">{syllabuss}</div>
           </div>
         </div>
       </div>
 
       <div className="row skill">
         <div className="three columns header-col">
-          <h1>
-            <span>Skills</span>
-          </h1>
-        </div>
-
-        <div className="nine columns main-col">
-          <p>{skillmessage}</p>
-
-          <div className="bars">
-            <ul className="skills">{skills}</ul>
+            <h1>
+              <span>Lab Syllabus</span>
+            </h1>
           </div>
-        </div>
+
+          <div className="nine columns main-col">
+            <div className="row item">
+              <div className="twelve columns">{skills}</div>
+            </div>
+          </div>
       </div>
     </section>
   );
