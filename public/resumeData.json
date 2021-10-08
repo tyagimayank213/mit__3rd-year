@@ -65,6 +65,11 @@
         "name": "DATASTRUCTURES & ALGORITHMS",
         "level": "85%"
       },
+      
+      {
+        "name": "Web Development",
+        "level": "90%"
+      },
       {
         "name": "REACTjS",
         "level": "85%"
@@ -87,11 +92,7 @@
       },
       
       {
-        "name": "Web Development",
-        "level": "90%"
-      },
-      {
-        "name": "JAVA",
+        "name": "Python",
         "level": "50%"
       }
     ]
