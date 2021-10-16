@@ -25,10 +25,10 @@ const About = ({ data }) => {
           <div className="row">
             <div className="columns download">
               <p>
-                <a href={secA} className="button">
+                <a href={secA} download className="button">
                   <i className="fa fa-download"></i>Section A
                 </a>
-                <a href={secA} className="button">
+                <a href={secB} download className="button">
                   <i className="fa fa-download"></i>Section B
                 </a>
               </p>

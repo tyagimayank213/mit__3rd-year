@@ -12,7 +12,12 @@ const Contact = ({ data }) => {
     var city = data.address.city;
     var state = data.address.state;
     var zip = data.address.zip;
+    var street1 = data.address.street1;
+    var city1 = data.address.city1;
+    var state1 = data.address.state1;
+    var zip1 = data.address.zip1;
     var phone = data.phone;
+    var phone1 = data.phone1;
     var contactEmail = data.email;
     var contactMessage = data.contactmessage;
   }
@@ -37,7 +42,7 @@ const Contact = ({ data }) => {
         </div>
 
         <div className="ten columns">
-          <p className="lead">{contactMessage}</p>
+          <p className="lead">Get in touch with us</p>
         </div>
       </div>
 
@@ -126,10 +131,16 @@ const Contact = ({ data }) => {
               {contactEmail}
               <br />
               <br />
+              {street1} <br />
+              {city1}, {state1} {zip1}
+              <br />
+              <span>{phone1}</span>
+              <br />
               {street} <br />
               {city}, {state} {zip}
               <br />
               <span>{phone}</span>
+              
             </p>
           </div>
         </aside>

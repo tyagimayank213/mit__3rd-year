@@ -1,11 +1,14 @@
 import React from "react";
 import TypeWriter from "react-typewriter";
+import { Link } from 'react-router-dom';
 
 const Header = ({ data }) => {
   if (data) {
     var name = data.name;
     var description = data.description;
     var city = data.address.city;
+    var header = data.header;
+    var headerImage = data.headerImage;
     var networks = data.social.map(function (network) {
       return (
         <li key={network.name}>
@@ -18,7 +21,7 @@ const Header = ({ data }) => {
   }
 
   return (
-    <header id="home">
+    <header id="home" style={{background: `#161415 url(${headerImage}) no-repeat top center`}}>
       <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
@@ -28,12 +31,14 @@ const Header = ({ data }) => {
         </a>
 
         <ul id="nav" className="nav">
-          <li className="current">
-            <a className="smoothscroll" href="#home">
-              Home
-            </a>
-          </li>
+          <Link to={header}>
           <li>
+            <p style={{color:"white"}}>
+              Home
+            </p>
+          </li>
+          </Link>
+            <li>
             <a className="smoothscroll" href="#about">
               TimeTable
             </a>
@@ -59,11 +64,8 @@ const Header = ({ data }) => {
 
       <div className="row banner">
         <div className="banner-text">
-          <h1 className="responsive-headline" style={{color:"white"}}>
+          <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>{name ? `${name}.` : null}</TypeWriter>
-          </h1>
-          <h2 className="responsive-headline">
-            <TypeWriter typing={0.5}>B.Tech - 3rd Year</TypeWriter>
           </h2>
           <h3>
             Based in {city} {description}

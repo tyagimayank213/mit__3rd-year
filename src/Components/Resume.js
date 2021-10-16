@@ -6,8 +6,8 @@ const Resume = ({ data }) => {
     var syllabuss = data.syllabus.map(function (subject) {
       return (
         <div key={subject.subjects} >
-          <a href={subject.link}>
-          <h4>{subject.subjects}</h4></a>
+          <a href={subject.link} download>
+          <p>{subject.subjects}</p></a>
           <hr></hr>
         </div>
       );
@@ -15,8 +15,8 @@ const Resume = ({ data }) => {
     var skills = data.skills.map(function (skills) {
       return (
         <div key={skills.subjects} >
-          <a href={skills.link}>
-          <h4>{skills.subjects}</h4></a>
+          <a href={skills.link} download>
+          <p>{skills.subjects}</p></a>
           <hr></hr>
         </div>
       );
@@ -42,7 +42,7 @@ const Resume = ({ data }) => {
       <div className="row skill">
         <div className="three columns header-col">
             <h1>
-              <span>Lab Syllabus</span>
+              <span >Lab Syllabus</span>
             </h1>
           </div>
 
