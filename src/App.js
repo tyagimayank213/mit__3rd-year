@@ -58,8 +58,8 @@ import Dpharm1 from './Dpharm1';
 import Dpharm2 from './Dpharm2';
 import Dpharm3 from './Dpharm3';
 import Dpharm4 from './Dpharm4';
-import LoginScreen from './LoginScreen';
 import firebase ,{auth} from './config/firebase-config'
+import Signup from './Signup';
 function App() {
   const [isUserSignedIn,setUserSignedIn] = useState(false)
   auth.onAuthStateChanged(userAuth => {
@@ -73,7 +73,7 @@ function App() {
     <div className="app">
       <Router>
         {!isUserSignedIn ? (
-          <LoginScreen />
+          <Signup />
         ):(
           <Switch>
           <Route path='/bba'>
