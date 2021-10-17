@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {BrowserRouter as Router,Switch,Route } from "react-router-dom";
 import Home from "./Home";
 import Bba from './Bba';
@@ -59,29 +59,20 @@ import Dpharm2 from './Dpharm2';
 import Dpharm3 from './Dpharm3';
 import Dpharm4 from './Dpharm4';
 import LoginScreen from './LoginScreen';
-import { auth } from './firebase';
-
+import firebase ,{auth} from './config/firebase-config'
 function App() {
-  const user = null;
-
-  useEffect(()=>{
-    const unsubscribe = auth.onAuthStateChanged(userAuth => {
-      if(userAuth){
-        console.log(userAuth)
-      }
-      else{
-
-      }
-    });
-    return () => {
-      unsubscribe();
-    }
-  }, []);
+  const [isUserSignedIn,setUserSignedIn] = useState(false)
+  auth.onAuthStateChanged(userAuth => {
+        if(userAuth){
+          return setUserSignedIn(true)
+        }
+        setUserSignedIn(false)
+      });
 
   return (
     <div className="app">
       <Router>
-        {!user ? (
+        {!isUserSignedIn ? (
           <LoginScreen />
         ):(
           <Switch>

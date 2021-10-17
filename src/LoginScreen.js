@@ -1,40 +1,25 @@
+import firebase from './config/firebase-config';
 import React, {useRef} from 'react'
-import { auth } from './firebase';
 import "./LoginScreen.css"
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+
 
 function LoginScreen() {
-        const emailRef = useRef(null);
-        const passwordRef = useRef(null);
-    
-        const register = (e) => {
+        const signInWithFirebase = (e) => {
             e.preventDefault();
-    
-            auth.createUserWithEmailAndPassword(
-                emailRef.current.value,
-                passwordRef.current.value
-            )
-            .then((authUser) => {
-                console.log(authUser)
-            })
-            .catch((error) => {
-                alert(error.message)
+            var provider = new GoogleAuthProvider();
+            const auth = getAuth();
+            signInWithPopup(auth, provider)
+            .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+            const credential = GoogleAuthProvider.credentialFromResult(result);
+            const token = credential.accessToken;
+            const user = result.user;
+    // ...
+            }).catch((error) => {
+                console.log(error)
             });
-        };
-     
-        const signIn = (e) => {
-            e.preventDefault();
-            
-            auth.signInWithEmailAndPassword(
-                emailRef.current.value,
-                passwordRef.current.value
-            )
-            .then((authUser) => {
-                console.log(authUser)
-            })
-            .catch((error) => {
-                alert(error.message)
-            });
-        };
+        }
     return (
         <div className="loginScreen">
             <img className="loginscreen__image" src='images/loginscreenimage.jpg' alt="" />
@@ -52,13 +37,7 @@ function LoginScreen() {
             <div className="signupScreen">
                     <form>
                         <h1>Sign In</h1>
-                        <input ref={emailRef} placeholder="Email" type="email" />
-                        <input ref={passwordRef} placeholder="Password" type="password" />
-                        <button type='submit' onClick={signIn}>Sign In</button>
-                        <h4>
-                            <span className="signupScreen__gray">New to MIT? </span>
-                            <span className="signupScreen__link" onClick={register}>Sign Up now</span>
-                            </h4>
+                        <button type='submit' onClick={signInWithFirebase}>Sign In</button>
                     </form>
 
                 </div>
