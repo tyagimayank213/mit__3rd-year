@@ -2,14 +2,19 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import { auth } from "./config/firebase-config";
 
 function Pharm(){
-
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://aosts.com/wp-content/uploads/2019/03/Independent-Water-analysis.jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
+          <button className="signout" onClick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>B.Pharm & D.Pharm</TypeWriter>
           </h2>

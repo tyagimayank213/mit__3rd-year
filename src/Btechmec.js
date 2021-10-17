@@ -2,14 +2,19 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import { auth } from "./config/firebase-config";
 
 function Btechmec(){
-
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://dynamic.placementindia.com/blog_images/20201105111343_image1.jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
+          <button className="signout" onClick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>B.Tech - Mechanical Engineering</TypeWriter>
           </h2>

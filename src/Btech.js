@@ -2,14 +2,19 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import { auth } from "./config/firebase-config";
 
 function Btech(){
-
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://www.galaxyeduworld.com/storage/course/1616842296_605f0e38afa50_750_351.jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
+          <button className="signout" onClick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>Bachelor of Technology</TypeWriter>
           </h2>

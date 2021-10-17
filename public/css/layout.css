@@ -61,7 +61,19 @@ header .banner {
    padding-bottom: 30px;
    text-align: center;
 }
-
+header button.signout{
+   background-color: rgb(235, 64, 64);
+   position:absolute;
+   top:10px;
+   right:10px;
+   height:50px;
+   width:120px;
+   z-index: 999;
+}
+header button.signout:hover{
+   background-color: white;
+   color: rgb(235, 64, 64);
+}
 header .banner-text { width: 100%; }
 header .banner-text h2 {
    font: 50px/1em 'opensans-bold', sans-serif;

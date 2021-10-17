@@ -2,14 +2,19 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import { auth } from "./config/firebase-config";
 
 function Btechcivil(){
-
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://icbt.lk/wp-content/uploads/2018/06/Civil-Structural-Engineering-min.jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
+          <button className="signout" onclick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>B.Tech - Civil Engineering</TypeWriter>
           </h2>

@@ -2,14 +2,19 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import { auth } from "./config/firebase-config";
 
 function Dpharm(){
-
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://eduly.in/wp-content/uploads/2019/06/antibiotic-capsules-close-up-139398-compressed.jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
+          <buttton className="signout" onClick={signOutt}>sign out</buttton>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>Diploma in Pharmacy</TypeWriter>
           </h2>

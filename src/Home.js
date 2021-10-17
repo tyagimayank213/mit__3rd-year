@@ -2,14 +2,21 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import firebase, { auth } from "./config/firebase-config";
 
 function Home(){
+
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
 
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://college-1be40.web.app/images/header-background.jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
+          <button className="signout" onClick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>Meerut Institute of Technology</TypeWriter>
           </h2>

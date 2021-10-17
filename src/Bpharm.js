@@ -2,14 +2,19 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import { auth } from "./config/firebase-config";
 
 function Bpharm(){
-
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://institute.careerguide.com/wp-content/uploads/2020/04/Pharmaceutical.jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
+          <button className="signout" onClick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>Bachelor of Pharmacy</TypeWriter>
           </h2>

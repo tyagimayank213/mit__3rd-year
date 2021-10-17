@@ -1,6 +1,7 @@
 import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
+import { auth } from "../config/firebase-config";
 
 const Header = ({ data }) => {
   if (data) {
@@ -19,7 +20,10 @@ const Header = ({ data }) => {
       );
     });
   }
-
+  const signOutt = (e)=>{
+    e.preventDefault();
+    auth.signOut();
+  }
   return (
     <header id="home" style={{background: `#161415 url(${headerImage}) no-repeat top center`}}>
       <nav id="nav-wrap">
@@ -64,6 +68,7 @@ const Header = ({ data }) => {
 
       <div className="row banner">
         <div className="banner-text">
+          <button className="signout" onClick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
             <TypeWriter typing={0.5}>{name ? `${name}.` : null}</TypeWriter>
           </h2>
