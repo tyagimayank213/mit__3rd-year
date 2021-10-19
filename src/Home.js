@@ -3,14 +3,15 @@ import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
 import firebase, { auth } from "./config/firebase-config";
+import { useState } from "react/cjs/react.development";
 
 function Home(){
-
+  
   const signOutt = (e)=>{
     e.preventDefault();
+    console.log(auth);
     auth.signOut();
   }
-
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(https://college-1be40.web.app/images/header-background.jpg)'}}>
@@ -70,6 +71,12 @@ function Home(){
               </p>
             </div>
           </div>
+      </div>
+    </section>
+    
+    <section id="portfolio">
+      <div className="row">
+        <iframe src="https://mitmeerut.ac.in/" height="500" width="100%" title="Iframe Example"></iframe>
       </div>
     </section>
     <footer>

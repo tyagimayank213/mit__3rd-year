@@ -3,6 +3,7 @@ import './Signup.css';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 function Signup() {
+    const [userName,setUserName] = useState('')
     const signInWithFirebase = (e) => {
         e.preventDefault();
         var provider = new GoogleAuthProvider();
@@ -13,6 +14,7 @@ function Signup() {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
         const user = result.user;
+        alert('Congratulations! '+user.displayName+' Signed In.')
 // ...
         }).catch((error) => {
             console.log(error)
@@ -46,10 +48,8 @@ function Signup() {
                             </form>
 
                         </div>
-
             </div>
         </div>
     )
 }
-
 export default Signup
