@@ -2,28 +2,22 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 import { Link } from 'react-router-dom';
 import Footer from "./Components/Footer";
-import firebase, { auth } from "./config/firebase-config";
-import { useState } from "react/cjs/react.development";
+import { auth } from "./config/firebase-config";
 
-function Home(){
-  
+function Bsc(){
   const signOutt = (e)=>{
     e.preventDefault();
-    console.log(auth);
     auth.signOut();
   }
   return (
     <div>
-    <header id="home" style={{backgroundImage:'url(https://college-1be40.web.app/images/header-background.jpg)'}}>
+    <header id="home" style={{backgroundImage:'url(https://www.tawicolleges.com/wp-content/uploads/2019/05/agricultural-science.jpg'}}>
       <div className="row banner">
         <div className="banner-text">
           <button className="signout" onClick={signOutt}>sign out</button>
           <h2 className="responsive-headline" >
-            <TypeWriter typing={0.5}>Meerut Institute of Technology</TypeWriter>
+            <TypeWriter typing={0.5}>Bachelor of Science</TypeWriter>
           </h2>
-          <h3>
-            Based in Meerut.
-          </h3>
           <hr />
           <ul className="social">
             <li key="facebook">
@@ -52,18 +46,21 @@ function Home(){
     </header>
     <section id="about">
       <div className="row" style={{textAlign:"center"}}>
-          <h2>Courses</h2>
+          <h2>Semesters</h2>
           <div className="row">
             <div className="columns download" style={{width:"100%"}}>
               <p>
-                <Link to="/btech" target="_blank" className="button">
-                  <i className="fa fa-download"></i>B.Tech
+                <Link to="/bsc1" className="button">
+                  <i className="fa fa-download"></i>1 Semester
                 </Link>
-                <Link to="/pharm" target="_blank" className="button">
-                  <i className="fa fa-download"></i>B.Pharm & D.Pharm
+                <Link to="/bsc2" className="button">
+                  <i className="fa fa-download"></i>2 Semester
                 </Link>
-                <Link to="/bcom" target="_blank" className="button">
-                  <i className="fa fa-download"></i>B.Com
+                <Link to="/bsc3" className="button">
+                  <i className="fa fa-download"></i>3 Semester
+                </Link>
+                <Link to="/bsc4" className="button">
+                  <i className="fa fa-download"></i>4 Semester
                 </Link>
               </p>
             </div>
@@ -71,24 +68,21 @@ function Home(){
           <div className="row">
             <div className="columns download" style={{width:"100%"}}>
               <p>
-                <Link to="/bba" target="_blank" className="button">
-                  <i className="fa fa-download"></i>BBA
+                <Link to="/bsc5" className="button">
+                  <i className="fa fa-download"></i>5 Semester
                 </Link>
-                <Link to="/bca" target="_blank" className="button">
-                  <i className="fa fa-download"></i>BCA
+                <Link to="/bsc6" className="button">
+                  <i className="fa fa-download"></i>6 Semester
                 </Link>
-                <Link to="/bsc" target="_blank" className="button">
-                  <i className="fa fa-download"></i>BSc
+                <Link to="/bsc7" className="button">
+                  <i className="fa fa-download"></i>7 Semester
+                </Link>
+                <Link to="/bsc8" className="button">
+                  <i className="fa fa-download"></i>8 Semester
                 </Link>
               </p>
             </div>
           </div>
-      </div>
-    </section>
-    
-    <section id="portfolio">
-      <div className="row">
-        <iframe src="https://mitmeerut.ac.in/" height="500" width="100%" title="Iframe Example"></iframe>
       </div>
     </section>
     <footer>
@@ -121,4 +115,4 @@ function Home(){
   );
 };
 
-export default Home;
+export default Bsc;

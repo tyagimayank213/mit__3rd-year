@@ -60,6 +60,22 @@ import Dpharm3 from './Dpharm3';
 import Dpharm4 from './Dpharm4';
 import firebase ,{auth} from './config/firebase-config'
 import Signup from './Signup';
+import Bsc from './Bsc';
+import Bsc1 from './Bsc1';
+import Bsc2 from './Bsc2';
+import Bsc3 from './Bsc3';
+import Bsc4 from './Bsc4';
+import Bsc5 from './Bsc5';
+import Bsc6 from './Bsc6';
+import Bsc7 from './Bsc7';
+import Bsc8 from './Bsc8';
+import Bca from './Bca';
+import Bca1 from './Bca1';
+import Bca2 from './Bca2';
+import Bca3 from './Bca3';
+import Bca4 from './Bca4';
+import Bca5 from './Bca5';
+import Bca6 from './Bca6';
 function App() {
   const [isUserSignedIn,setUserSignedIn] = useState(false)
   auth.onAuthStateChanged(userAuth => {
@@ -249,6 +265,54 @@ function App() {
           </Route>
           <Route path='/dpharm4'>
             <Dpharm4 />
+          </Route>
+          <Route path='/bsc'>
+            <Bsc />
+          </Route>
+          <Route path='/bsc1'>
+            <Bsc1 />
+          </Route>
+          <Route path='/bsc2'>
+            <Bsc2 />
+          </Route>
+          <Route path='/bsc3'>
+            <Bsc3 />
+          </Route>
+          <Route path='/bsc4'>
+            <Bsc4 />
+          </Route>
+          <Route path='/bsc5'>
+            <Bsc5 />
+          </Route>
+          <Route path='/bsc6'>
+            <Bsc6 />
+          </Route>
+          <Route path='/bsc7'>
+            <Bsc7 />
+          </Route>
+          <Route path='/bsc8'>
+            <Bsc8 />
+          </Route>
+          <Route path='/bca'>
+            <Bca />
+          </Route>
+          <Route path='/bca1'>
+            <Bca1 />
+          </Route>
+          <Route path='/bca2'>
+            <Bca2 />
+          </Route>
+          <Route path='/bca3'>
+            <Bca3 />
+          </Route>
+          <Route path='/bca4'>
+            <Bca4 />
+          </Route>
+          <Route path='/bca5'>
+            <Bca5 />
+          </Route>
+          <Route path='/bca6'>
+            <Bca6 />
           </Route>
           <Route path='/'>
             <Home />
