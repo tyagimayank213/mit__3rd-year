@@ -116,7 +116,7 @@ function Home(){
         <Link to='bcom'>
          <div class="content">
            <div class="img">
-             <img src="https://thumbs.dreamstime.com/z/calculator-dollars-us-money-background-blue-top-35513595.jpg%22" alt=""/>
+             <img src="https://img.freepik.com/free-photo/calculator-100-dollar-bills-saving-concept_359031-11620.jpg?size=626&ext=jpg" alt=""/>
            </div>
            <div class="details">
              <div class="job">B.Com</div>

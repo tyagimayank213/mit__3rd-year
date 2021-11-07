@@ -11,7 +11,7 @@ function Bcom(){
   }
   return (
     <div>
-    <header id="home" style={{backgroundImage:'url(https://thumbs.dreamstime.com/z/calculator-dollars-us-money-background-blue-top-35513595.jpg)'}}>
+    <header id="home" style={{backgroundImage:'url(https://img.freepik.com/free-photo/calculator-100-dollar-bills-saving-concept_359031-11620.jpg?size=626&ext=jpg)'}}>
       <div className="row banner">
         <div className="banner-text">
           <button className="signout" onClick={signOutt}>sign out</button>
