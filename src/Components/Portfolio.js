@@ -3,7 +3,7 @@ import React from "react";
 const Portfolio = ({ data }) => {
   if (data) {
     var projects = data.projects.map(function (projects) {
-      var projectImage = "images/portfolio/" + projects.image;
+      var projectImage =projects.image;
       return (
         <div key={projects.title} className="columns portfolio-item">
           <div className="item-wrap">
@@ -29,7 +29,7 @@ const Portfolio = ({ data }) => {
     <section id="portfolio">
       <div className="row">
         <div className="twelve columns collapsed">
-          <h1>Quantums</h1>
+          <h1>Notes</h1>
 
           <div
             id="portfolio-wrapper"

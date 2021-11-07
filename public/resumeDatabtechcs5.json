@@ -2,7 +2,7 @@
   "main": {
     "name": "B.Tech - Computer Sci. & Engg. - 5th Sem",
     "header":"btechcs",
-    "headerImage":"https://www.indiaeducation.net/imagesvr_ce/5334/Computer%20Engineering.jpg",
+    "headerImage":"https://t3.ftcdn.net/jpg/01/81/12/58/360_F_181125818_cGv3Id6cwEDGv6UatGhwSoU669nnaW83.jpg",
     "description": ".Meerut Institute of Technology.",
     "image": "profilepic.png",
     "bio": "You can Download the Timetable",
@@ -91,37 +91,37 @@
       {
         "title": "Database Management System",
         "category": "",
-        "image": "dbms.jpg",
+        "image": "media/btech/computer science/semester5/images/dbms.png",
         "url": "media/btech/computer science/semester5/notes/DBMS.pdf"
       },
       {
         "title": "Design and Analysis of Algorithms",
         "category": "",
-        "image": "daa.jpg",
+        "image": "media/btech/computer science/semester5/images/daa.png",
         "url": "media/btech/computer science/semester5/notes/DAA.pdf"
       },
       {
         "title": "Compiler Design",
         "category": "",
-        "image": "cd.jpg",
+        "image": "media/btech/computer science/semester5/images/cd.png",
         "url": "media/btech/computer science/semester5/notes/CD.pdf"
       },
       {
         "title": "Constitution of India",
         "category": "",
-        "image": "coi.jpg",
+        "image": "media/btech/computer science/semester5/images/coi.png",
         "url": "media/btech/computer science/semester5/notes/COI.pdf"
       },
       {
         "title": "Machine Learning Techniques",
         "category": "",
-        "image": "mlt.jpg",
+        "image": "media/btech/computer science/semester5/images/mlt.png",
         "url": "media/btech/computer science/semester5/notes/MLT.pdf"
       },
       {
         "title": "Object Oriented System Design",
         "category": "",
-        "image": "oosd.jpg",
+        "image": "media/btech/computer science/semester5/images/oosd.png",
         "url": "media/btech/computer science/semester5/notes/OOSD.pdf"
       }
     ]

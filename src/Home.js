@@ -12,10 +12,6 @@ function Home(){
     console.log(auth);
     auth.signOut();
   }
-  function playVideo(file) {
-    setFileName(file);
-  }
-  const [fileName, setFileName] = useState('https://www.youtube.com/embed/wiuLCUZAWy8');
   return (
     <div>
     <header id="home" style={{backgroundImage:'url(http://mitpharmacy.org/images/Header3.jpg)'}}>
@@ -54,10 +50,10 @@ function Home(){
         </a>
       </p>
     </header>
-    <section id="about">
-      <div className="row" style={{textAlign:"center"}}>
+    <section id="about" style={{textAlign:"center"}}>
           <h2>Courses</h2>
-          <div className="row">
+      <div className="row rowpos" style={{textAlign:"center"}}>
+          {/* <div className="row">
             <div className="columns download" style={{width:"100%"}}>
               <p>
                 <Link to="/btech" target="_blank" className="button">
@@ -86,78 +82,107 @@ function Home(){
                 </Link>
               </p>
             </div>
-          </div>
+          </div> */}
+          <div class="container">
+    <input type="radio" name="dot" id="one"/>
+    <input type="radio" name="dot" id="two"/>
+    <div class="main-card">
+      <div class="cards">
+        <div class="card">
+        <Link to='btech'>
+         <div class="content">
+           <div class="img">
+          <img src="https://www.galaxyeduworld.com/storage/course/1616842296_605f0e38afa50_750_351.jpg" alt=""/>
+           </div>
+           <div class="details">
+             <div class="job">B.Tech</div>
+           </div>
+         </div>
+        </Link>
+        </div>
+        <div class="card">
+        <Link to='pharm'>
+         <div class="content">
+           <div class="img">
+           <img src="https://aosts.com/wp-content/uploads/2019/03/Independent-Water-analysis.jpg" alt=""/>
+           </div>
+           <div class="details">
+             <div class="job">B.Pharm & D.Pharm</div>
+           </div>
+         </div>
+         </Link>
+        </div>
+        <div class="card">
+        <Link to='bcom'>
+         <div class="content">
+           <div class="img">
+             <img src="https://thumbs.dreamstime.com/z/calculator-dollars-us-money-background-blue-top-35513595.jpg%22" alt=""/>
+           </div>
+           <div class="details">
+             <div class="job">B.Com</div>
+           </div>
+         </div>
+        </Link>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+        <Link to='bba'>
+         <div class="content">
+           <div class="img">
+             <img src="https://www.indifi.com/blog/wp-content/uploads/2020/11/business-plan.jpg" alt=""/>
+           </div>
+           <div class="details">
+             <div class="job">BBA</div>
+           </div>
+         </div>
+         </Link>
+        </div>
+        <div class="card">
+        <Link to='bca'>
+         <div class="content">
+           <div class="img">
+             <img src="https://campushunt.in/blog/wp-content/uploads/2018/04/laptop-screen-with-code-best-bca-colleges-in-bangalore-india-1024x536.jpg" alt=""/>
+           </div>
+           <div class="details">
+             <div class="job">BCA</div>
+           </div>
+         </div>
+         </Link>
+        </div>
+        <div class="card">
+        <Link to='bsc'>
+         <div class="content">
+           <div class="img">
+             <img src="https://www.tawicolleges.com/wp-content/uploads/2019/05/agricultural-science.jpg" alt=""/>
+           </div>
+           <div class="details">
+             <div class="job">BSc</div>
+           </div>
+         </div>
+         </Link>
+        </div>
+      </div>
+    </div>
+    <div class="button" style={{background:'#e3343a'}}>
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
       </div>
     </section>
     
     <section id="portfolio1">
       <div className="row">
         <iframe src="https://mitmeerut.ac.in/" height="500" width="100%" title="Iframe Example"></iframe>
+        <div style={{textAlign:"center"}}>
+              <a href="https://mitmeerut.ac.in/admission-cell" target="_blank"className="button">
+                  Visit Us to Know More
+              </a>
+          </div>
       </div>
     </section>
-    <section id="portfolio">
-      <div className="row">
-        <div className="twelve columns collapsed">
-          <h1>Videos</h1>
-
-          <div className="videorow">
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/vi/9i0FZJpby7M/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC7jJPB5GI-MyJ8u5U6F0Yh1OAqLg" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/9i0FZJpby7M')} />
-                </div>
-            </div>
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/an_webp/wiuLCUZAWy8/mqdefault_6s.webp?du=3000&sqp=CJfsgIwG&rs=AOn4CLALE3T-aUROyaXfCHdLr-427_6Fng" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/wiuLCUZAWy8')}/>
-                </div>
-            </div>
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/vi/q62SvxH2Vuk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGtJQlwbMdV2aI_LTYEzy96xrNGQ" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/q62SvxH2Vuk')}/>
-                </div>
-            </div>
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/an_webp/haO2Lp4AGNk/mqdefault_6s.webp?du=3000&sqp=CKbUgIwG&rs=AOn4CLAEe0Y5Et4CF6rVhx33X_vf04e9WA" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/haO2Lp4AGNk')} />
-                </div>
-            </div>
-          </div>
-          <div className="videorow">
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/vi/g1iPYSGqHiI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2ofgs-m4KXOx_JpXhTaYmLsHpug" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/g1iPYSGqHiI')} />
-                </div>
-            </div>
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/vi/5F33ceKXXPA/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDsC_n8FoQ7kxCBvf5lv2xoGpvyEQ" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/5F33ceKXXPA')}/>
-                </div>
-            </div>
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/an_webp/gWuDIsnwTkg/mqdefault_6s.webp?du=3000&sqp=CMD1gIwG&rs=AOn4CLCaRFlYXp2BUCwvkpC4QLIESTlg4A" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/gWuDIsnwTkg')}/>
-                </div>
-            </div>
-            <div className="videocol">
-                <div className="feature-img">
-                    <img alt="" src="https://i.ytimg.com/an_webp/gJ-gS2EHwts/mqdefault_6s.webp?du=3000&sqp=CLbpgIwG&rs=AOn4CLAOaIURybggpptJxEmDvZNbUKVC4g" width="100%" />
-                    <img alt="" src="https://www.freeiconspng.com/thumbs/button-icon-png/play-button-icon-png-17.png" className="play-btn" onClick={(e)=>playVideo('https://www.youtube.com/embed/gJ-gS2EHwts')}/>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="video-player">
-      <iframe width="1145" height="450" src={fileName} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </section>
+    
     <footer>
       <div className="row">
         <div className="twelve columns">
